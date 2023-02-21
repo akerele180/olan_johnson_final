@@ -653,6 +653,10 @@ video {
   z-index: 50;
 }
 
+.z-\[999999\] {
+  z-index: 999999;
+}
+
 .float-right {
   float: right;
 }
@@ -807,12 +811,20 @@ video {
   height: calc(100vh - 100px);
 }
 
+.h-full {
+  height: 100%;
+}
+
 .h-screen {
   height: 100vh;
 }
 
 .w-\[30px\] {
   width: 30px;
+}
+
+.w-auto {
+  width: auto;
 }
 
 .w-full {
@@ -1850,9 +1862,27 @@ video {
      object-fit: scale-down;
 }
 
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .px-\[5vw\] {
   padding-left: 5vw;
   padding-right: 5vw;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .py-3 {
@@ -2061,6 +2091,19 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\] {
+  color: ;
+}
+
+.text-\[\"\#64BABE\"\] {
+  color: "#64BABE";
+}
+
+.text-\[\#64BABE\] {
+  --tw-text-opacity: 1;
+  color: rgb(100 186 190 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -2468,6 +2511,10 @@ html {
 
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:gap-3 {
+    gap: 0.75rem;
   }
 
   .sm\:pb-8 {
